@@ -1,0 +1,158 @@
+header{
+    margin: 60px 0 ;
+}
+
+.wrapper{
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 0 5%;
+    max-width: 1000px;
+    
+}
+.title{
+    font-family: PT Serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -0.045em;
+
+    color: #000000;
+    margin: 0 60px 28px 0;
+}
+
+body{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+
+    color: #000000;
+    margin: 0;
+}
+p{
+    margin: 0;
+}
+.subtitle{
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 10px 0;
+    
+}
+
+.desc{
+    width: 333px;
+    max-width: 440px;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.header-ctn{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    
+    justify-content: space-between;
+}
+
+.wallposter-ctn{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5em;
+}
+.poster-ctn{
+    display: flex;
+}
+    
+.poster-card img{
+    width: 90%;
+    height: auto;
+    margin-bottom: 10px;
+    display: inline-block
+    
+   
+
+}
+.job-title{
+    display: inline;
+    font-family: PT Serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 13px;
+    text-transform: uppercase;
+    margin: 0 1%;
+    color: #000000;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+
+
+.poster-ctn{
+    width: 100%;
+    
+    
+}
+
+.full-name{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+}
+.wallposter-ctn .poster-card:nth-child(even) {
+    margin-top: 30%;
+}
+footer{
+    margin: 130px auto 24px auto;
+    color: #A9A9A9;
+    font-size: 14px;
+    line-height: 17px;
+    
+}
+.profile-link{
+    font-weight: bold;
+    color: #A9A9A9;
+    
+}
+.profile-link:hover{
+    color: #333;
+}
+
+
+
+@media screen and (min-width: 1080px) {
+    .wallposter-ctn{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .wallposter-ctn .poster-card:nth-child(even) {
+        margin-top: 0;
+    }
+    
+    .wallposter-ctn .poster-card:nth-child(3n+2) {
+        margin-top: 30%;
+    }
+    .wallposter-ctn{
+        gap: 4em;
+    }
+    .wrapper{
+        margin: auto;
+    }
+    header{
+        margin: 100px 0;
+    }
+    
+    .job-title{
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .full-name{
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .desc{
+        font-size: 18px;
+        line-height: 27px;
+        width: 440px;
+    }
+}
